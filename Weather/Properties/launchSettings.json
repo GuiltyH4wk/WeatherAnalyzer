@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:32338",
-      "sslPort": 44351
+      "applicationUrl": "http://localhost:32440",
+      "sslPort": 44383
     }
   },
   "profiles": {
-    "HeroesDatabase": {
+    "Weather": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7163;http://localhost:5263",
+      "applicationUrl": "https://localhost:7109;http://localhost:5240",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
