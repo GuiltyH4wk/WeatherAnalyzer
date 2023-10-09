@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Weather.Data.DataBaseContext;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<WeatherContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WeatherContext") ?? throw new InvalidOperationException("Connection string 'WeatherContext' not found.")));
 
 // Add services to the container.
 
