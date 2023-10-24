@@ -1,9 +1,23 @@
-﻿namespace Weather.Service.Interface
+﻿using Weather.Data.DataBaseContext;
+
+namespace Weather.Service.Interface
 {
-    public interface WeatherService : IWeatherService
+    public class WeatherService : IWeatherService
     {
+        private readonly WeatherContext _context;
+
+        public WeatherService(WeatherContext context)
+        {
+            this._context = context;
+        }
 
 
+        public async Task CreateWeather(Model.WeatherPersist data)
+        {
+
+
+
+        }
 
     }
 }
