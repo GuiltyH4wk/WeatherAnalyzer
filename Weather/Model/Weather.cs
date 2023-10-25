@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using FluentValidation;
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using Weather.Enum;
 
 namespace Model
 {
@@ -11,16 +14,29 @@ namespace Model
         public float Temperature { get; set; }
         public float Humidity { get; set; }
         public DateTime CreateAt{ get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        public IsActive IsActive { get; set; }
     }
 
 
     public class WeatherPersist
     {
+        public Guid Id { get; set; }
 
         public float Temperature { get; set; }
         public float Humidity { get; set; }
         public DateTime CreateAt { get; set; }
     }
 
+    public class PersonValidator : AbstractValidator<Weather>
+    {
+        public PersonValidator()
+        {
+            RuleFor(x => x.Id).NotNull();
+            RuleFor(x => x.Temperature).NotNull();
+            RuleFor(x => x.Humidity).NotNull();
+        }
+    }
 
 }

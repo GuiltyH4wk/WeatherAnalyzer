@@ -2,5 +2,7 @@
 {
     public interface IWeatherService
     {
+        Task CreateWeather(Model.WeatherPersist data);
+
     }
 }

@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Weather.Enum;
 
-namespace Data
+namespace Weather.Data
 {
     [Table("Weather")]
     public class Weather
@@ -15,6 +16,10 @@ namespace Data
         public float Humidity { get; set; }
         [Column("createdAt")]
         public DateTime CreatedAt { get; set; }
+        [Column("updatedAt")]
+        public DateTime UpdatedAt { get; set; }
+        [Column("isActive")]
+        public IsActive IsActive { get; set; }
 
     }
 }

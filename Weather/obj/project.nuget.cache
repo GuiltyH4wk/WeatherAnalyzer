@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ch6TA9bVdwfoFzPVytAO3K66E8+kNPcLOcB2atrz2Dua6OfASngXB077rmZTm+Xsg7hrZS2tkkaqD+n5GOuYuw==",
+  "dgSpecHash": "HBau5zp3us8fETaHn0UVwOzQeK6K84Or+GxYVcrOVn4pYCnjhog7OIwh5V9gf4qZRhGewHIRUp4P0H6x2TUf7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
+    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

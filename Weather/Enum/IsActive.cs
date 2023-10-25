@@ -1,6 +1,11 @@
 ﻿namespace Weather.Enum
 {
-    public class IsActive
+    public enum IsActive : short
     {
+        
+        inActive = 0,
+
+        Active = 1
+
     }
 }
