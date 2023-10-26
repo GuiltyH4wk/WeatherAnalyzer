@@ -14,61 +14,58 @@ namespace Weather.Service.Interface
             this._context = context;
         }
 
-
-        public async Task CreateWeather(Model.WeatherPersist data)
+        public async Task GetWeather(List<Guid> id)
         {
+            if (id == null) throw new ArgumentNullException(nameof(id));
+
+            List<Model.Weather> model = new List<Model.Weather>();
+
+            model = await _context.Weather.Where(x => x.Id.Equals(id)).ToListAsync();
+
+        }
+
+        public async Task UpdateWeather(Model.WeatherPersist data)
+        {
+            if(data == null) throw new ArgumentNullException(nameof(data));
+
+            bool isUpdate = false;
+            if(data.Id != Guid.Empty) isUpdate = true;
+            
             Data.Weather model = new Data.Weather();
 
-            if(data != null )
+            if(isUpdate)
             {
-                model.Id = new Guid();
+                model.Temperature = data.Temperature;
+                model.Humidity = data.Humidity;
+                model.UpdatedAt = DateTime.UtcNow;
+
+                _context.Update(model);
+            }
+            else
+            { 
+                model.Id = Guid.NewGuid();
                 model.Temperature = data.Temperature;
                 model.Humidity = data.Humidity;
                 model.CreatedAt = DateTime.UtcNow;
+                model.UpdatedAt = DateTime.UtcNow;
                 model.IsActive = IsActive.Active;
-                
-                await _context.SaveChangesAsync();
-            }
 
+                _context.Add(model);
+            }
+            await _context.SaveChangesAsync();
         }
 
-
-        public async Task UpdateWeather(Model.Weather data)
+        public async Task DeleteWeather(Model.Weather data)
         {
-            Model.Weather model = new Model.Weather();
-            Data.Weather weather = new Data.Weather();
+            if (data == null) throw new ArgumentNullException(nameof(data));
 
-            model = await _context.Weather.Where(x => x.Equals(data.Id) && x.IsActive == IsActive.Active).FirstAsync();
+            Data.Weather model = new Data.Weather();
 
-            bool IsUpdated = model == data ? true : false;
+            data.IsActive = IsActive.inActive;
 
-            if (IsUpdated)
-            {
-                weather.Temperature = data.Temperature;
-                weather.Humidity = data.Humidity;
-                weather.UpdatedAt = DateTime.UtcNow;
-            }
-
+            _context.Update(model);
+            await _context.SaveChangesAsync();
         }
-
-
-        //public async Task DeleteWeather(Model.Weather data)
-        //{
-        //    Model.Weather model = new Model.Weather();
-
-        //    model = await _context.Weather.Where(x => x.Equals(data.Id) && x.IsActive == IsActive.Active).FirstAsync();
-
-        //    bool IsUpdated = model == data ? true : false;
-
-        //    if (IsUpdated)
-        //    {
-        //        weather.Temperature = data.Temperature;
-        //        weather.Humidity = data.Humidity;
-        //        weather.UpdatedAt = DateTime.UtcNow;
-        //    }
-        //    else
-
-        //}
 
     }
 }

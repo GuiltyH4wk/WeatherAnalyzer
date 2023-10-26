@@ -2,7 +2,8 @@
 {
     public interface IWeatherService
     {
-        Task CreateWeather(Model.WeatherPersist data);
+        Task UpdateWeather(Model.WeatherPersist data);
+        Task DeleteWeather(Model.Weather data);
 
     }
 }
