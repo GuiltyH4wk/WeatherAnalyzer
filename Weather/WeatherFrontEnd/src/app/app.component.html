@@ -1,2 +1,17 @@
-<app-home></app-home>
-<!-- <h1>{{title}}</h1> -->
+<mat-toolbar color="primary">
+  <mat-toolbar>
+    <header>{{headerTitle}}</header>
+    <mat-nav-list *ngFor="let menuItem of menuItems">
+     <button mat-button class="buttonSize">{{menuItem}}</button>
+
+    </mat-nav-list>
+
+
+
+    <div class="example-spacer row"> </div>
+      <button mat-icon-button (click)="this.homePage()">
+          <mat-icon > home </mat-icon>
+      </button>
+      
+    </mat-toolbar>
+</mat-toolbar>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather.csproj": {}
+    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather.csproj": {
+    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather.csproj",
+        "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
         "projectName": "Weather",
-        "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather.csproj",
+        "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
         "packagesPath": "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\obj\\",
+        "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GuiltyH4wk\\AppData\\Roaming\\NuGet\\NuGet.Config",

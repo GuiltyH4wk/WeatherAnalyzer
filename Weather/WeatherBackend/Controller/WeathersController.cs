@@ -23,15 +23,13 @@ namespace Weather
         }
 
         // GET: Weathers
-        public async Task<IActionResult> Index()
+        public async Task<Model.Weather> Index(Guid weatherId)
         {
-            return _context.Weather != null ?
-                        View(await _context.Weather.ToListAsync()) :
-                        Problem("Entity set 'WeatherContext.Weather'  is null.");
+            return await _weatherService.GetWeatherById(weatherId);
         }
 
         // GET: Weathers/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public async Task<Model.Weather> Details(Guid? id)
         {
             if (id == null || _context.Weather == null) throw new ArgumentNullException(nameof(id));
 
@@ -39,7 +37,7 @@ namespace Weather
 
             if (data == null) throw new ArgumentNullException(nameof(id));
 
-            return View(data);
+            return await _weatherService.GetWeatherById(id.Value);
         }
 
         // GET: Weathers/Create
