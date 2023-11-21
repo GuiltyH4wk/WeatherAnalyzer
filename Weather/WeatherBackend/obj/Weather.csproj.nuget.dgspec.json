@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {}
+    "C:\\Users\\kchorny\\Documents\\WeatherProjectSchool\\Weather\\WeatherBackend\\Weather.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {
+    "C:\\Users\\kchorny\\Documents\\WeatherProjectSchool\\Weather\\WeatherBackend\\Weather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
+        "projectUniqueName": "C:\\Users\\kchorny\\Documents\\WeatherProjectSchool\\Weather\\WeatherBackend\\Weather.csproj",
         "projectName": "Weather",
-        "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
-        "packagesPath": "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\obj\\",
+        "projectPath": "C:\\Users\\kchorny\\Documents\\WeatherProjectSchool\\Weather\\WeatherBackend\\Weather.csproj",
+        "packagesPath": "C:\\Users\\kchorny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kchorny\\Documents\\WeatherProjectSchool\\Weather\\WeatherBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\GuiltyH4wk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kchorny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://crepo.cite.gr/repository/cite-nuget/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -90,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
