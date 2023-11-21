@@ -251,3 +251,6 @@ C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\obj\Debug\net6.0\Weather.RazorAs
 C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\obj\Debug\net6.0\Weather.RazorAssemblyInfo.cs
 C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\bin\Debug\net6.0\FluentAssertions.dll
 C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\kchorny\Documents\WeatherProjectSchool\Weather\WeatherBackend\obj\Debug\net6.0\Weather.dll
+C:\Users\kchorny\Documents\WeatherProjectSchool\Weather\WeatherBackend\obj\Debug\net6.0\refint\Weather.dll
+C:\Users\kchorny\Documents\WeatherProjectSchool\Weather\WeatherBackend\obj\Debug\net6.0\Weather.pdb
