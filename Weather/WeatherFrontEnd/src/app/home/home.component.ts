@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { Guid } from 'guid-typescript';
 import { Weather } from '../data/weather';
 import { Router, RouterEvent, RouterLink } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
 import { FormControl, FormGroup } from '@angular/forms';
-
 
 
 export interface PeriodicElement {
@@ -33,8 +32,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent{
+export class HomeComponent implements  OnInit {
 
+  @Input() slideToggle!: boolean | null;
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
@@ -45,6 +45,11 @@ export class HomeComponent{
 
 
   constructor(private routerLink : Router){}
+
+
+  ngOnInit(): void {
+    if(this.slideToggle == null) this.slideToggle = false;
+  }
   
 
   title = 'Weather Analyzer'

@@ -9,3 +9,13 @@ export interface Weather {
     updatedAt: Date;
     isActive: IsActive;
   }
+
+
+  export interface WeatherPesist {
+    id: Guid;
+    temperature: number;
+    humidity: number;
+    createAt: Date;
+    updatedAt: Date;
+    isActive: IsActive;
+  }

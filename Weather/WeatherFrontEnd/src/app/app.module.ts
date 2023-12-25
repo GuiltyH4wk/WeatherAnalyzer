@@ -17,6 +17,10 @@ import {Component} from '@angular/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatInputModule} from '@angular/material/input';
+import { ErrorStateMatcher } from '@angular/material/core';
+import { FormControl, FormGroupDirective, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,9 +40,11 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [ErrorStateMatcher],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
