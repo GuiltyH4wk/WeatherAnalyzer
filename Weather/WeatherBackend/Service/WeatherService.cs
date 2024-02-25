@@ -36,8 +36,7 @@ namespace Weather.Service.Interface
         {
             if(data == null) throw new ArgumentNullException(nameof(data));
 
-            bool isUpdate = false;
-            if(data.Id != Guid.Empty) isUpdate = true;
+            isUpdate = this.IsValidId(data.Id);
             
             Data.Weather model = new Data.Weather();
 
@@ -75,5 +74,10 @@ namespace Weather.Service.Interface
             await _context.SaveChangesAsync();
         }
 
-    }
+		public Boolean IsValidId(Guid? id)
+		{
+			return id.HasValue && id.Value != Guid.Empty;
+		}
+
+	}
 }
