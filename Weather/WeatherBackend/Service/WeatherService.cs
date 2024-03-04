@@ -36,7 +36,7 @@ namespace Weather.Service.Interface
         {
             if(data == null) throw new ArgumentNullException(nameof(data));
 
-            isUpdate = this.IsValidId(data.Id);
+            bool isUpdate = this.IsValidId(data.Id);
             
             Data.Weather model = new Data.Weather();
 

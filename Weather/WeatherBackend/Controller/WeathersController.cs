@@ -50,7 +50,8 @@ namespace Weather
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+		[Route("create")]
+		[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Temperature,Humidity,CreateAt")] Model.Weather weather)
         {
             if (ModelState.IsValid)
@@ -83,7 +84,8 @@ namespace Weather
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+		[Route("update")]
+		[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Temperature,Humidity,CreateAt")] Model.Weather weather)
         {
             if (id != weather.Id)
@@ -134,7 +136,8 @@ namespace Weather
 
         // POST: Weathers/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+		[Route("delete")]
+		[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.Weather == null)
