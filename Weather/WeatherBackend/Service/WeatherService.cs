@@ -40,26 +40,23 @@ namespace Weather.Service.Interface
             
             Data.Weather model = new Data.Weather();
 
-            if(isUpdate)
-            {
-                model.Temperature = data.Temperature;
-                model.Humidity = data.Humidity;
-                model.UpdatedAt = DateTime.UtcNow;
-
-                _context.Update(model);
-            }
-            else
+            if(!isUpdate)
             { 
                 model.Id = Guid.NewGuid();
-                model.Temperature = data.Temperature;
-                model.Humidity = data.Humidity;
                 model.CreatedAt = DateTime.UtcNow;
-                model.UpdatedAt = DateTime.UtcNow;
                 model.IsActive = IsActive.Active;
-
-                _context.Add(model);
             }
-            await _context.SaveChangesAsync();
+
+			model.Temperature = data.Temperature;
+			model.Humidity = data.Humidity;
+			model.UpdatedAt = DateTime.UtcNow;
+
+
+			if (isUpdate) _context.Update(model);
+            else _context.Add(model);
+
+
+			await _context.SaveChangesAsync();
         }
 
         public async Task DeleteWeather(Model.Weather data)

@@ -1,0 +1,10 @@
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.csproj.AssemblyReference.cache
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.Form1.resources
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.Properties.Resources.resources
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.csproj.GenerateResource.cache
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.csproj.CoreCompileInputs.cache
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\bin\Debug\WeatherAnalyzerAPI.exe.config
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\bin\Debug\WeatherAnalyzerAPI.exe
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\bin\Debug\WeatherAnalyzerAPI.pdb
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.exe
+C:\Users\GuiltyH4wk\Documents\WorkSpace\Weather\WeatherAnalyzerAPI\obj\Debug\WeatherAnalyzerAPI.pdb
