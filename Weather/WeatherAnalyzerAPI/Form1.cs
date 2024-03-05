@@ -3,6 +3,7 @@ using System.IO;
 using System.IO.Ports;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -70,21 +71,16 @@ namespace WeatherAnalyzerAPI
 			textBox1.Text += "Temperature is:" + weather.Temperature.Value + " C" + Environment.NewLine;
 			textBox1.Text += "Humidity is:" + weather.Humidity.Value + " C" + Environment.NewLine;
 
-			string weatherXml;
-			using (var stringWriter = new StringWriter())
-			{
-				var serializer = new XmlSerializer(typeof(Weather));
-				serializer.Serialize(stringWriter, weather);
-				weatherXml = stringWriter.ToString();
-			}
+			var serializer = JsonSerializer.Serialize<Weather>(weather);
 
 			using (var HttpClient = new HttpClient())
 			{
 				try
 				{
-					var content = new StringContent(weatherXml, Encoding.UTF8, "application/xml");
+					var content = new StringContent(serializer, Encoding.UTF8, "application/json");
 
-					HttpResponseMessage response = await HttpClient.PostAsync("http://localhost:7109/api/weather/update", content);
+					HttpResponseMessage response = await HttpClient.PostAsync("http://localhost:5240/weather/update", content);
+
 
 					if (response.IsSuccessStatusCode)
 					{

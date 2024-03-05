@@ -22,12 +22,9 @@ namespace Model
 
     public class WeatherPersist
     {
-        public Guid Id { get; set; }
-
+        public Guid? Id { get; set; }
         public float Temperature { get; set; }
         public float Humidity { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
     }
 
     public class PersonValidator : AbstractValidator<Weather>

@@ -8,27 +8,27 @@ namespace Weather.Data
     public class Weather
     {
         [Key]
-        [Column("id")]
+        [Column("Id")]
         [Required]
         public Guid Id { get; set; }
         
-        [Column("temperature")]
+        [Column("Temperature")]
         [Required]
         public float Temperature { get; set; }
         
-        [Column("humidity")]
+        [Column("Humidity")]
         [Required]
         public float Humidity { get; set; }
         
-        [Column("createdAt")]
+        [Column("CreatedAt")]
         [Required]
         public DateTime CreatedAt { get; set; }
-        [Column("updatedAt")]
+        [Column("UpdatedAt")]
         [Required]
 
         public DateTime UpdatedAt { get; set; }
         
-        [Column("isActive")]
+        [Column("IsActive")]
         [Required]
         public IsActive IsActive { get; set; }
 
