@@ -11,7 +11,7 @@ using Weather.Service.Interface;
 
 namespace Weather
 {
-	[Route("api/[controller]")]
+	[Route("weather")]
 	[ApiController]
 	public class WeathersController : Controller
     {
