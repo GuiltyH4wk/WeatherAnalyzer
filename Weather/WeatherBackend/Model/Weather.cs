@@ -11,8 +11,8 @@ namespace Model
 
         public Guid Id { get; set; }
 
-        public float Temperature { get; set; }
-        public float Humidity { get; set; }
+        public decimal Temperature { get; set; }
+        public decimal Humidity { get; set; }
         public DateTime CreatedAt{ get; set; }
         public DateTime UpdatedAt { get; set; }
 
@@ -23,8 +23,8 @@ namespace Model
     public class WeatherPersist
     {
         public Guid? Id { get; set; }
-        public float Temperature { get; set; }
-        public float Humidity { get; set; }
+        public decimal Temperature { get; set; }
+        public decimal Humidity { get; set; }
     }
 
     public class PersonValidator : AbstractValidator<Weather>

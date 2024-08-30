@@ -14,11 +14,11 @@ namespace Weather.Data
         
         [Column("Temperature")]
         [Required]
-        public float Temperature { get; set; }
+        public decimal Temperature { get; set; }
         
         [Column("Humidity")]
         [Required]
-        public float Humidity { get; set; }
+        public decimal Humidity { get; set; }
         
         [Column("CreatedAt")]
         [Required]
