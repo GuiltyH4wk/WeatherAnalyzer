@@ -11202,11 +11202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
+      "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj",
       "projectName": "Weather",
-      "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
+      "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj",
       "packagesPath": "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\obj\\",
+      "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GuiltyH4wk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11229,6 +11229,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11285,7 +11290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

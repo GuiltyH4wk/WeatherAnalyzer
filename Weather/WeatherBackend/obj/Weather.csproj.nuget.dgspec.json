@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {}
+    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj": {
+    "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
+        "projectUniqueName": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj",
         "projectName": "Weather",
-        "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\Weather.csproj",
+        "projectPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj",
         "packagesPath": "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\WeatherBackend\\obj\\",
+        "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GuiltyH4wk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://crepo.cite.gr/repository/cite-nuget/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -35,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -91,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

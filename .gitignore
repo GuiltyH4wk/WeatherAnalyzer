@@ -6,3 +6,6 @@
 *.ai
 *.mov
 *.mp3
+Weather/WeatherAnalyzerAPI/.vs/
+Weather/WeatherBackend/.vs/
+Weather/WeatherAnalyzerAPI/obj/

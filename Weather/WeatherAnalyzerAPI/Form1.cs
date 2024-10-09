@@ -21,7 +21,7 @@ namespace WeatherAnalyzerAPI
 			timer1.Interval = 2000;
 			timer1.Start();
 
-			serialPort = new SerialPort("COM3", 9600);
+			serialPort = new SerialPort("COM5", 9600);
 
 			try
 			{
