@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ReUzY129tYXpA8jNreSKsTjvvCu+Nc4ppYtAZ4iFpAC0pNfoqKRyu6NNf/nGJdKFdPbQeu46VhgsU3Ax5ReaHQ==",
+  "dgSpecHash": "xzY0IUl+pfo=",
   "success": true,
   "projectFilePath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\Weather.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\dynamicinterop\\0.9.1\\dynamicinterop.0.9.1.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -127,6 +128,7 @@
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\nuget.projectmodel\\6.6.1\\nuget.projectmodel.6.6.1.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
+    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\r.net\\1.9.0\\r.net.1.9.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

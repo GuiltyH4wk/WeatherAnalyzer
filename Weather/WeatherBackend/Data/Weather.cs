@@ -19,13 +19,17 @@ namespace Weather.Data
         [Column("Humidity")]
         [Required]
         public decimal Humidity { get; set; }
-        
-        [Column("CreatedAt")]
+
+		[Column("WeatherConditionScore")]
+		[Required]
+		public int WeatherConditionScore { get; set; }
+
+		[Column("CreatedAt")]
         [Required]
         public DateTime CreatedAt { get; set; }
+
         [Column("UpdatedAt")]
         [Required]
-
         public DateTime UpdatedAt { get; set; }
         
         [Column("IsActive")]

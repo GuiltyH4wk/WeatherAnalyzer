@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "DynamicInterop/0.9.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DynamicInterop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/DynamicInterop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FluentAssertions/6.12.0": {
         "type": "package",
         "dependencies": {
@@ -1871,7 +1884,7 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "related": ".xml"
           }
         },
@@ -2083,6 +2096,24 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "R.NET/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "DynamicInterop": "0.9.1",
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.Win32.Registry": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RDotNet.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3848,6 +3879,19 @@
     }
   },
   "libraries": {
+    "DynamicInterop/0.9.1": {
+      "sha512": "n21+Hd+tceX8lgaOosPV+Pne+YqnZUd5RLW3OhnsVxWRzYXiAIAKmKweHIePYeY+fmcn3N5tjkJyQUccFuL3bg==",
+      "type": "package",
+      "path": "dynamicinterop/0.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dynamicinterop.0.9.1.nupkg.sha512",
+        "dynamicinterop.nuspec",
+        "lib/netstandard2.0/DynamicInterop.dll",
+        "lib/netstandard2.0/DynamicInterop.xml"
+      ]
+    },
     "FluentAssertions/6.12.0": {
       "sha512": "ZXhHT2YwP9lajrwSKbLlFqsmCCvFJMoRSK9t7sImfnCyd0OB3MhgxdoMcVqxbq1iyxD6mD2fiackWmBb7ayiXQ==",
       "type": "package",
@@ -7068,6 +7112,19 @@
         "lib/netstandard2.0/NuGet.Versioning.dll",
         "nuget.versioning.6.6.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "R.NET/1.9.0": {
+      "sha512": "2Z3V/KsOHtfa5fjeidfX+EU4AdO+x+byh9Skk9HQ7kiqIYD2cJwH3vJnqOxtbSaaswbqe+d6pnRsCXpb9sp0lw==",
+      "type": "package",
+      "path": "r.net/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/RDotNet.dll",
+        "lib/netstandard2.0/RDotNet.xml",
+        "r.net.1.9.0.nupkg.sha512",
+        "r.net.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -11193,11 +11250,13 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.21",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.21",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
+      "R.NET >= 1.9.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\": {}
+    "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -11208,8 +11267,12 @@
       "packagesPath": "C:\\Users\\GuiltyH4wk\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\GuiltyH4wk\\Documents\\WorkSpace\\Weather\\Weather\\WeatherBackend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\GuiltyH4wk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11234,7 +11297,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net6.0": {
@@ -11266,6 +11330,10 @@
             "target": "Package",
             "version": "[6.0.16, )"
           },
+          "R.NET": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
@@ -11290,7 +11358,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

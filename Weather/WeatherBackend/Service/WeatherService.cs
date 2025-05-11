@@ -27,10 +27,12 @@ namespace Weather.Service.Interface
 
             data.Temperature = model.Temperature;
             data.Humidity = model.Humidity;
-            data.CreatedAt = model.CreatedAt;
+
+			data.CreatedAt = model.CreatedAt;
 
             return data;
         }
+
 
         public async Task UpdateWeather(Model.WeatherPersist data)
         {
@@ -75,6 +77,38 @@ namespace Weather.Service.Interface
 		{
 			return id.HasValue && id.Value != Guid.Empty;
 		}
+
+		//public async void Mars(Guid id)
+		//{
+
+		//	List<Data.Weather> model = new List<Data.Weather>();
+		//	Model.Weather data = new Model.Weather();
+
+		//	model = await _context.Weather.Where(x => x.CreatedAt.Day == DateTime.Now.Day && x.IsActive == IsActive.Active).ToListAsync();
+
+  //          double[][] xTraining = new double[][]			
+  //          {
+		//		new double[] { 30.0, 70.0 }, // 30°C, 70% humidity
+  //              new double[] { 25.0, 60.0 }, // 25°C, 60% humidity
+  //              new double[] { 20.0, 80.0 }, // 20°C, 80% humidity
+  //              new double[] { 35.0, 50.0 }, // 35°C, 50% humidity
+  //              new double[] { 15.0, 90.0 }, // 15°C, 90% humidity
+  //              new double[] { 28.0, 65.0 }, // 28°C, 65% humidity
+  //              new double[] { 22.0, 75.0 }, // 22°C, 75% humidity
+  //              new double[] { 18.0, 85.0 }, // 18°C, 85% humidity
+  //          };
+
+
+
+
+		//	if (model == null) throw new ArgumentNullException(nameof(model));
+
+		//	data.Temperature = model.Temperature;
+		//	data.Humidity = model.Humidity;
+		//	data.CreatedAt = model.CreatedAt;
+
+		//	return data;
+		//}
 
 	}
 }

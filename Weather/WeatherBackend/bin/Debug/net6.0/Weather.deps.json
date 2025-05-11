@@ -14,10 +14,19 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.21",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.21",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
+          "R.NET": "1.9.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "Weather.dll": {}
+        }
+      },
+      "DynamicInterop/0.9.1": {
+        "runtime": {
+          "lib/netstandard2.0/DynamicInterop.dll": {
+            "assemblyVersion": "0.9.0.0",
+            "fileVersion": "0.9.0.0"
+          }
         }
       },
       "FluentAssertions/6.12.0": {
@@ -1648,6 +1657,19 @@
           }
         }
       },
+      "R.NET/1.9.0": {
+        "dependencies": {
+          "DynamicInterop": "0.9.1",
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.Win32.Registry": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RDotNet.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2548,6 +2570,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DynamicInterop/0.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n21+Hd+tceX8lgaOosPV+Pne+YqnZUd5RLW3OhnsVxWRzYXiAIAKmKweHIePYeY+fmcn3N5tjkJyQUccFuL3bg==",
+      "path": "dynamicinterop/0.9.1",
+      "hashPath": "dynamicinterop.0.9.1.nupkg.sha512"
+    },
     "FluentAssertions/6.12.0": {
       "type": "package",
       "serviceable": true,
@@ -3408,6 +3437,13 @@
       "sha512": "sha512-Wm/AOFICTIrCgbVxv9dNWusraTzcggbo5W4ao7hD8NNVq911an9TGwW+uNuYc8I5PkpTeMuSXneV2u6hbi1P4w==",
       "path": "nuget.versioning/6.6.1",
       "hashPath": "nuget.versioning.6.6.1.nupkg.sha512"
+    },
+    "R.NET/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2Z3V/KsOHtfa5fjeidfX+EU4AdO+x+byh9Skk9HQ7kiqIYD2cJwH3vJnqOxtbSaaswbqe+d6pnRsCXpb9sp0lw==",
+      "path": "r.net/1.9.0",
+      "hashPath": "r.net.1.9.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
